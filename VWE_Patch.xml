@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Weapons Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				
+				<!--<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="VWE_CombatHandgun"]/verbs/li/range</xpath>
+					<value>
+						<range>20.9</range>
+					</value>
+				</li>
+								
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="VWE_CombatHandgun"]/statBases</xpath>
+					<value>
+							<statBases>
+								<WorkToMake>6000</WorkToMake>
+								<Mass>1.2</Mass>
+								<AccuracyTouch>0.80</AccuracyTouch>
+								<AccuracyShort>0.7</AccuracyShort>
+								<AccuracyMedium>0.4</AccuracyMedium>
+								<AccuracyLong>0.3</AccuracyLong>
+								<RangedWeapon_Cooldown>0.72</RangedWeapon_Cooldown>
+							</statBases>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="VWE_Bow_Long"]/verbs/li/range</xpath>
+					<value>
+						<range>29.9</range>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="VWE_Bow_Long"]/statBases</xpath>
+					<value>
+							<statBases>
+								<WorkToMake>6000</WorkToMake>
+								<Mass>1.2</Mass>
+								<AccuracyTouch>0.45</AccuracyTouch>
+								<AccuracyShort>0.7</AccuracyShort>
+								<AccuracyMedium>0.76</AccuracyMedium>
+								<AccuracyLong>0.82</AccuracyLong>
+								<RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+							</statBases>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="VWE_Bullet_LeverActionRifle"]/projectile</xpath>
+					<value>
+						    <projectile>
+								<damageDef>Bullet</damageDef>
+								<damageAmountBase>12</damageAmountBase>
+								<speed>60</speed>
+							</projectile>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="VWE_Bullet_LightSMG"]/projectile</xpath>
+					<value>
+						    <projectile>
+								<damageDef>Bullet</damageDef>
+								<damageAmountBase>5</damageAmountBase>
+								<speed>55</speed>
+							</projectile>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="VWE_Bullet_HMG"]/projectile</xpath>
+					<value>
+							<projectile>
+								<damageDef>Bullet</damageDef>
+								<damageAmountBase>13</damageAmountBase>
+								<armorPenetrationBase>0.5</armorPenetrationBase>
+								<stoppingPower>3</stoppingPower>
+								<speed>40</speed>
+							</projectile>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="VWE_Gun_HMG"]/statBases</xpath>
+					<value>
+							<statBases>
+								<WorkToMake>40000</WorkToMake>
+								<Mass>10</Mass>
+								<AccuracyTouch>0.4</AccuracyTouch>
+								<AccuracyShort>0.48</AccuracyShort>
+								<AccuracyMedium>0.4</AccuracyMedium>
+								<AccuracyLong>0.24</AccuracyLong>
+								<RangedWeapon_Cooldown>2.4</RangedWeapon_Cooldown>
+							</statBases>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="VWE_Gun_HMG"]/equippedStatOffsets</xpath>
+					<value>
+							<equippedStatOffsets>
+								<MoveSpeed>-0.15</MoveSpeed>
+							</equippedStatOffsets>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="VWE_Gun_HandCannon"]/verbs/li/range</xpath>
+					<value>
+						<range>26.9</range>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+				<xpath>/Defs/ThingDef[defName="VWE_Bullet_SawedOffShotgun"]/projectile/damageAmountBase</xpath>
+					<value>
+						<stoppingPower>2.5</stoppingPower>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="VWE_Bullet_Carbine"]/projectile</xpath>
+					<value>
+						    <projectile>
+								<damageDef>Bullet</damageDef>
+								<damageAmountBase>12</damageAmountBase>
+								<speed>70</speed>
+							</projectile>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="VWE_Gun_Carbine"]/verbs/li/range</xpath>
+					<value>
+						<range>25.9</range>
+					</value>
+				</li>-->
+				
+				
+				
+				<!--Крупнокалиберная винтовка-->
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="Bullet_AntiMaterialRifle"]/projectile</xpath>
+					<value>
+						<projectile>
+							<damageDef>Bullet</damageDef>
+							<damageAmountBase>38</damageAmountBase>
+							<stoppingPower>3</stoppingPower>
+							<armorPenetrationBase>0.6</armorPenetrationBase>
+							<speed>55</speed>
+						</projectile>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="VWE_Gun_AntiMaterialRifle"]/statBases</xpath>
+					<value>
+						<statBases>
+							<WorkToMake>100000</WorkToMake>
+							<Mass>12</Mass>
+							<AccuracyTouch>0.66</AccuracyTouch>
+							<AccuracyShort>0.70</AccuracyShort>
+							<AccuracyMedium>0.65</AccuracyMedium>
+							<AccuracyLong>0.82</AccuracyLong>
+							<RangedWeapon_Cooldown>2.8</RangedWeapon_Cooldown>
+						</statBases>
+					</value>
+				</li>
+								
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="VWE_Gun_AntiMaterialRifle"]/verbs</xpath>
+					<value>
+					<verbs>
+						<li>
+							<verbClass>Verb_Shoot</verbClass>
+							<hasStandardCommand>true</hasStandardCommand>
+							<defaultProjectile>Bullet_AntiMaterialRifle</defaultProjectile>
+							<warmupTime>2.6</warmupTime>
+							<range>29.9</range>
+							<burstShotCount>5</burstShotCount>
+							<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+							<soundCast>VWE_Shot_AntiMaterialRifle</soundCast>
+							<soundCastTail>GunTail_Heavy</soundCastTail>
+							<muzzleFlashScale>9</muzzleFlashScale>
+						</li>
+					</verbs>	
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="VWE_Gun_AntiMaterialRifle"]/equippedStatOffsets</xpath>
+					<value>
+						<equippedStatOffsets>
+							<MoveSpeed>-0.35</MoveSpeed>
+						</equippedStatOffsets>
+					</value>
+				</li>
+				
+				<!--Боевой пистолет-->
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="VWE_Bullet_CombatHandgun"]/projectile</xpath>
+					<value>
+						<projectile>
+							<damageDef>Bullet</damageDef>
+							<damageAmountBase>11</damageAmountBase>
+							<armorPenetrationBase>0.13</armorPenetrationBase>
+							<speed>55</speed>
+						</projectile>
+					</value>
+				</li>
+					
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="VWE_CombatHandgun"]/statBases</xpath>
+					<value>
+						<statBases>
+							<WorkToMake>6000</WorkToMake>
+							<Mass>1.2</Mass>
+							<AccuracyTouch>0.93</AccuracyTouch>
+							<AccuracyShort>0.47</AccuracyShort>
+							<AccuracyMedium>0.3</AccuracyMedium>
+							<AccuracyLong>0.3</AccuracyLong>
+							<RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
+						</statBases>																								
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="VWE_CombatHandgun"]/verbs/li/range</xpath>
+					<value>
+						<range>20</range>
+					</value>
+				</li>
+				
+				<!--Энергопистолет-->
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="VWE_Bullet_ChargePistol"]/projectile</xpath>
+					<value>
+						<projectile>
+							<damageDef>Bullet</damageDef>
+							<damageAmountBase>3</damageAmountBase>
+							<armorPenetrationBase>1</armorPenetrationBase>
+							<speed>55</speed>
+						</projectile>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="VWE_Gun_ChargePistol"]/statBases</xpath>
+					<value>
+						<statBases>							
+							<Mass>1.2</Mass>
+							<AccuracyTouch>0.80</AccuracyTouch>
+							<AccuracyShort>0.55</AccuracyShort>
+							<AccuracyMedium>0.4</AccuracyMedium>
+							<AccuracyLong>0.3</AccuracyLong>
+							<RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+							<WorkToMake>38000</WorkToMake>
+						</statBases>																								
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="VWE_Gun_ChargePistol"]</xpath>
+					<value>
+						<equippedStatOffsets>
+							<MoveSpeed>0.2</MoveSpeed> 
+						</equippedStatOffsets>														
+					</value>
+				</li>
+				
+				
+				
+				<!--Остальная хуйня-->
+				
+				<!--<li Class="PatchOperationInsert">
+				<xpath>/Defs/ThingDef[defName="Bullet_Leadball"]/projectile/damageAmountBase</xpath>
+					<value>
+						<stoppingPower>1.5</stoppingPower>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="VWE_Gun_ChargePistol"]/verbs/li/burstShotCount</xpath>
+					<value>
+						<burstShotCount>2</burstShotCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="VWE_Bullet_ChargeSMG"]/projectile</xpath>
+					<value>
+						   <projectile>
+								<damageDef>Bullet</damageDef>
+								<damageAmountBase>12</damageAmountBase>
+								<armorPenetrationBase>0.35</armorPenetrationBase>
+								<speed>70</speed>
+							</projectile>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="VWE_Bullet_ChargeSniperRifle"]/projectile</xpath>
+					<value>
+						   <projectile>
+								<damageDef>Bullet</damageDef>
+								<damageAmountBase>22</damageAmountBase>
+								<armorPenetrationBase>0.48</armorPenetrationBase>
+								<stoppingPower>1.5</stoppingPower>
+								<speed>80</speed>
+							</projectile>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="VWE_Bullet_ChargeMinigun"]/projectile</xpath>
+					<value>
+						   <projectile>
+								<damageDef>Bullet</damageDef>
+								<damageAmountBase>10</damageAmountBase>
+								<armorPenetrationBase>0.25</armorPenetrationBase>
+								<speed>60</speed>
+							</projectile>
+					</value>
+				</li>-->
+				
+
+				
+			</operations>
+		</match>
+	</Operation>
+</Patch>

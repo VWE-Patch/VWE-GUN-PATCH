@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Weapons Expanded</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+			<success>Always</success>
+            <operations>
+
+                <!--Патч на арбалет-->
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="VWE_Arrow_Bolt"]/projectile</xpath>
+                    <value>
+
+                    <projectile>
+
+                    <flyOverhead>false</flyOverhead>
+                    <damageDef>Arrow</damageDef>
+                    <damageAmountBase>18</damageAmountBase>
+                    <stoppingPower>1</stoppingPower>
+                    <armorPenetrationBase>0.35</armorPenetrationBase>
+                    <speed>58</speed>
+
+                    </projectile>
+
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="VWE_Bow_Crossbow"]/verbs/li/range</xpath>
+                    <value>
+
+                    <range>35</range>
+
+                    </value>
+
+                </li> 
+
+                <!--Патч на Мушкет-->
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Bullet_Leadball"]/projectile</xpath>
+
+                    <value>
+
+                    <projectile>
+                    <damageDef>Bullet</damageDef>
+                    <damageAmountBase>18</damageAmountBase>
+                    <speed>56</speed>
+                    <armorPenetrationBase>0.33</armorPenetrationBase>
+                    <stoppingPower>2</stoppingPower>
+                    </projectile>
+
+                    </value>
+                </li> 
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="VWE_Gun_Musket"]/verbs/li/range</xpath>
+
+                    <value>
+                    <range>35</range>
+                    </value>
+
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="VWE_Gun_Musket"]/statBases</xpath>
+
+                    <value>
+                    
+                    <statBases>
+                    <WorkToMake>20000</WorkToMake>
+                    <Mass>3.2</Mass>
+                    <AccuracyTouch>0.65</AccuracyTouch>
+                    <AccuracyShort>0.75</AccuracyShort>
+                    <AccuracyMedium>0.69</AccuracyMedium>
+                    <AccuracyLong>0.42</AccuracyLong>
+                    <RangedWeapon_Cooldown>3.4</RangedWeapon_Cooldown>
+                    </statBases>
+
+                    </value>
+
+                </li>
+    
+                <!--Патч на Кремневый Пистолет -->
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="VWE_Gun_Flintlock"]/statBases</xpath>
+
+                    <value>
+                    
+                    <statBases>
+                    <WorkToMake>18000</WorkToMake>
+                    <Mass>1.6</Mass>
+                    <AccuracyTouch>0.96</AccuracyTouch>
+                    <AccuracyShort>0.6</AccuracyShort>
+                    <AccuracyMedium>0.58</AccuracyMedium>
+                    <AccuracyLong>0.2</AccuracyLong>
+                    <RangedWeapon_Cooldown>2.66</RangedWeapon_Cooldown>
+                    </statBases>
+
+                    </value>
+
+                </li>
+
+                <!--Патч на Длинный лук-->
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="VWE_Bow_Long"]/statBases</xpath>
+
+                    <value>
+                    
+                    <statBases>
+                    <WorkToMake>11200</WorkToMake>
+                    <Mass>3.2</Mass>
+                    <AccuracyTouch>0.64</AccuracyTouch>
+                    <AccuracyShort>0.63</AccuracyShort>
+                    <AccuracyMedium>0.69</AccuracyMedium>
+                    <AccuracyLong>0.90</AccuracyLong>
+                    <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+                    </statBases>
+
+                    </value>
+
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="VWE_Bow_Long"]/verbs/li/range</xpath>
+
+                    <value>
+
+                    <range>30</range>
+
+                    </value>
+
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="VWE_Arrow_Long"]/projectile/damageAmountBase</xpath>
+
+                    <value>
+
+                     <damageAmountBase>18</damageAmountBase>
+
+                    </value>
+
+                </li> 
+
+                <!--Патч на Блочный лук-->
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="VWE_Arrow_Compound"]/projectile/damageAmountBase</xpath>
+
+                    <value>
+
+                    <damageAmountBase>17</damageAmountBase>
+                    
+                    </value>
+                </li> 
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="VWE_Bow_Compound"]/statBases/RangedWeapon_Cooldown</xpath>
+
+                    <value>
+                    
+                    <RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+                    
+                    </value>
+
+                </li> 
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>
